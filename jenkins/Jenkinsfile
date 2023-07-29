@@ -21,9 +21,10 @@ pipeline {
                 sh './jenkins/scripts/deliver.sh'
             }
         }
-        stage('finish') {
+        stage('Finish') {
             steps {
                 sh 'echo Build and test finished successfully'
+                sh 'raz is king'
         }
     }
 }
